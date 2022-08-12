@@ -24,7 +24,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     
 /*Mobile*/
 @media (max-width: 767px) {
-    /*Menu*/
+        /*Menu*/
     .menu{
         margin: 0;
         height: max-content;
@@ -54,8 +54,11 @@ Utiliza las referencias de los breakpoints @media abajo */
     .title__container{
         width: 43vh;
     }
-    .title__network{
-        width: auto;
+    .title .title__div .title__container ul{
+        justify-content: flex-start;
+    }
+    .title__network___item{
+        padding-right: 2rem;
     }
 
     /*Sección sobre mi*/
