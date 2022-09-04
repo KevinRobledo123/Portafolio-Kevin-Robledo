@@ -34,7 +34,9 @@ section.academic{
 }
 
 .academic__courses___box ul li.academic__courses___item____img{
-    background-color: var(--color-cajas);
+    display: flex;
+	justify-content: center;
+	background-color: var(--color-cajas);
     padding: 8%;
 }
 
@@ -91,6 +93,7 @@ section.experience {
 	padding: 1rem;
 	font-size: 1rem;
 	border: 1px solid #664c9f;
+	border-radius: 7px;
 	color: #664c9f;
 }
 
