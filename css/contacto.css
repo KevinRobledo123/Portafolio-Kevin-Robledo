@@ -1,0 +1,155 @@
+
+/*Contacto*/
+
+section.formcontacto {
+	padding: 3% 6% 3%;
+	background-color: #664c9f47;
+}
+
+.formcontacto__contacto {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formcontacto--esquerda {
+	width: 40%;
+}
+
+.formcontacto__title {
+	font-size: 2rem;
+    margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.formcontacto__img {
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.formcontacto__text {
+	width: 58%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.formcontacto__subtext {
+	font-weight: 500;
+	line-height: 1.5rem;
+	margin-bottom: 1.5rem;
+    margin-top: 0;
+	text-align: justify;
+}
+
+/***************/
+/*Contacto 2*/
+
+/*formulario*/
+.contactoForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 100%;
+}
+.formularioGrupo{
+    width: 40%;
+    height: 15vh;
+}
+.formLabel{
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 2%;
+    cursor: pointer;
+}
+.formGrupoInput{
+    position: relative;
+}
+.formInput,#mensaje{
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 1vh;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5vh solid #4639ff;
+    transition: .5s ease all;
+    resize: none;
+}
+.formInput:focus,#mensaje:focus{
+    outline: none;
+    border-bottom: 0.5vh solid #ffbd59;
+}
+.formInputError{
+    display: none;
+    font-size: 2vh;
+}
+.formInputError.active{
+    display: block;
+}
+.validacionEstado{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    opacity: 0;
+}
+.formGrupoBtnEnviar,
+.formularioMensaje{
+    width: 85%;
+}
+.formularioMensaje{
+    background: red;
+    padding: 1vh;
+    border-radius: 2vh;
+    display: none;
+}
+.formularioMensaje.active{
+    display: block;
+}
+.formGrupoBtnEnviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formGrupoBtnEnviar #button{
+    width: 50%;
+    height: 8vh;
+    cursor: pointer;
+    transition: .1s ease all;
+    border: none;
+    border-radius: 1vh;
+    font-size: 3.5vh;
+    line-height:8vh ;
+    font-weight: 600;
+    color: #F1F1F1;
+    background: #4639ff;
+    margin-top: 2rem;
+}
+.formGrupoBtnEnviar #button:hover{
+    background: #7970f5;
+    transition: .3s ease all;
+}
+.formMensajeExito{
+    display: none;
+    text-align: center;
+    font-size:2.5vh ;
+    width: 80%;
+    padding: 1vh;
+    border-radius: 2vh;
+    margin-block: 3vh;
+    background: #078307;
+}
+.formMensajeExito.active{
+    display: block;
+}
+.contactoForm input::placeholder,
+.contactoForm textarea::placeholder{
+    color: #9c9c9c;
+    font-size: 2vh;
+}

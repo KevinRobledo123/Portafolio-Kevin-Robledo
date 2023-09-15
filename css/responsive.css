@@ -1,0 +1,119 @@
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+    /* Menú */
+    .menuMobile{
+        display: none;
+    }
+    
+    /*title*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+}
+    
+/*Mobile*/
+@media (max-width: 767px) {
+        /*Menu*/
+    .menu{
+        margin: 0;
+        height: max-content;
+    }
+    .nav{
+        display: none;
+    }
+    /*Titulo*/
+    .title__div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .title__profile{
+        width: 42vh;
+    }
+    .title__bio{
+        width: 100%;
+        justify-content: center;
+        font-size: 2.5rem
+    }
+    section.title{
+        width: auto;
+    }
+    .title .title__div .title__container h3{
+        width: 100%;
+    }
+    .title__container{
+        width: 43vh;
+    }
+    .title .title__div .title__container ul{
+        justify-content: flex-start;
+    }
+    .title__network___item{
+        padding-right: 2rem;
+    }
+
+    /*Sección sobre mi*/
+    section.about{
+        width: auto;
+        padding: 62px;
+    }
+    .about .about__container{
+        width: 100%;
+    }
+    /*Skills*/
+    .skills{
+        margin: 64px 12%;
+    }
+    .skills .skills__box{
+        margin: 0px 0px 0px 0px;
+        width: auto;
+    }
+    /*Hobbies*/
+    section.hobbies{
+        margin: 64px 12%;
+    }
+    .hobbies .hobbies__box{
+        margin: 0px 0px 0px 0px;
+        width: auto;
+    }
+     
+    /*Formación Académica*/
+    .academic .academic__courses{
+        display: block;
+    }
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
+}
+
+@media (max-width:521px){
+    /*Skills*/
+    .skills{
+        margin: 64px 12%;
+    }
+    .skills .skills__box{
+        margin: 0px 0px 0px 0px;
+        width: auto;
+    }
+    /*Hobbies*/
+    section.hobbies{
+        margin: 64px 12%;
+    }
+    .hobbies .hobbies__box{
+        margin: 0px 0px 0px 0px;
+        width: auto;
+    }
+}
