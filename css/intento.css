@@ -1,0 +1,136 @@
+:root{
+    --color-dark: hsl(0, 0%, 98%);
+    --color-light-selection: rgba(38, 37, 40, 0.99);
+    --color-lilac: hsl(263, 29%, 32%);
+    --color-lilac-selection: rgba(76, 58, 105, 0.9);
+    --color-mint-selection: rgba(119, 64, 105, 0.9);
+    --color-marshmellow: hsl(314, 22%, 42%);
+    --color-pale-blue: hsl(236, 100%, 87%);
+}
+.intento__div{
+    text-align: center;
+    margin: 30px;
+}
+
+.intento__item{
+    /*display: flex;
+    justify-content: space-between;*/
+    align-items: center;
+    padding: 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+    
+}
+
+.intento__item__boton{
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: var(--color-dark);
+    color: black;
+
+    background-color: var(--color-dark);
+    width: 25%;
+    height: 3.5rem;
+}
+
+.intento__item__boton:hover{
+    background: var(--color-pale-blue);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--color-pale-blue),
+                0 0 25px var(--color-pale-blue),
+                0 0 50px var(--color-pale-blue),
+                0 0 100px var(--color-pale-blue);
+}
+
+.intento__item span{
+    position: absolute;
+    display: block;
+}
+
+.intento__item span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-pale-blue));
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.intento__item span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--color-pale-blue));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2{
+    0% {
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+.intento__item span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--color-pale-blue));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3{
+    0% {
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+.intento__item span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--color-pale-blue));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4{
+    0% {
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
